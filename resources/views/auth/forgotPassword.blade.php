@@ -12,7 +12,7 @@
 
     <!-- css style -->
 
-    <title>Login</title>
+    <title>Forgot Password</title>
   </head>
   <body>
     <div class="container my-auto">
@@ -22,17 +22,16 @@
             <img src="/img/Logo Raga Sukma.png" alt="logo" class="rounded mx-auto d-block mb-2 logo" />
 
             <form class="form-login">
-              <div class="mb-3 mail">
-                <label for="exampleInputEmail1" class="form-label">Email </label>
-                <input type="email" class="form-control" id="exampleInputEmail1" />
+              <div class="mb-3">
+                <label for="newPassword" class="form-label">New Password </label>
+                <input type="password" class="form-control" id="newPassword" />
               </div>
               <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
                 <input type="password" class="form-control" id="exampleInputPassword1" />
               </div>
 
-              <a href="#" class="btn btn-primary justify-content-center d-flex mt-4">Login</a>
-              <a href="/forgot-password" class="d-flex justify-content-center mt-3 forgot">Forgot Password?</a>
+              <a href="#" class="btn btn-primary justify-content-center d-flex mt-4">Submit</a>
             </form>
           </div>
         </div>
@@ -40,13 +39,13 @@
       <div class="row">
         <div class="card mx-auto mt-2">
           <div class="card-body text-center">
-            <p>Don't have an account? <a href="/register">Create an Account</a></p>
+            <p>Back to <a href="/login">Login</a></p>
           </div>
         </div>
       </div>
     </div>
     <!-- Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="/dist/js/bootstrap.min.js"></script>
+    <script src="../dist/js/bootstrap.min.js"></script>
   </body>
 </html>
