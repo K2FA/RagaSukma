@@ -1,13 +1,8 @@
-html,
-body {
-    height: 100%;
-    line-height: 1.5;
-    /* font-family: 'Ubuntu', sans-serif; */
-}
 body {
     background-color: rgba(0, 0, 0, 0.03);
-    display: flex;
-    align-items: center;
+    height: 100vh;
+    /* display: flex;
+    align-items: center; */
 }
 .card {
     width: 470px;
@@ -31,15 +26,20 @@ body {
     box-shadow: none;
     border: 1px solid black;
 }
-
+.card .submit {
+    width: 200px;
+}
 @media (max-width: 768px) {
     .card {
-        width: 400px;
+        width: 80% !important;
         border-color: rgba(0, 0, 0, 0);
     }
     .logo {
         max-width: 120px;
         max-height: 120px;
+    }
+    .card .submit {
+        width: 140px;
     }
 }
 @media (max-width: 992px) {
