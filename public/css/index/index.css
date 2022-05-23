@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap");
+body {
+    background-color: #eeeeee;
+    font-family: "Quicksand", sans-serif;
+    /* height: 300vh; */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 0 0 #cac7c7;
+    font-weight: 500 !important;
+    font-size: 17px;
+}
+.navbar button span {
+    color: #000 !important;
+}
+
+.navbar-nav li a {
+    color: #000 !important;
+}
+
+.navbar-nav li .register {
+    background-color: #000;
+    color: #fff !important;
+    border-radius: 7px;
+}
+
+.navbar-nav li .register:hover,
+.navbar-nav li .register:focus-within {
+    background-color: #3d5a73;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand img {
+    width: 70px;
+    height: 61px;
+}
+.navbar-nav li .nav-hov:hover,
+.cart .nav-link span:hover {
+    color: #3d5a73 !important;
+}
+.cart .nav-link {
+    position: relative;
+    color: #000 !important;
+}
+
+/* End Of Navbar */
+
+/* Hero Section */
+.jumbotron {
+    background-image: url(/img/jumbotronBG.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.jumbotron img {
+    height: 100vh;
+}
+.jumbotron .desc {
+    color: #fff;
+    align-items: center;
+}
+/* End of Hero */
+
+/* Product */
+.produk {
+    margin-bottom: 150px !important;
+}
+
+.title .fw {
+    font-weight: 500 !important;
+}
+
+.card {
+    max-width: 18rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    overflow: hidden;
+    border: none;
+    transition: transform 500ms ease;
+    margin: 0 auto !important;
+}
+.card1 {
+    background-image: url(/img/bgKopi.jpg);
+}
+.card2 {
+    background-image: url(/img/bgRedVelvet.jpg);
+}
+.card3 {
+    background-image: url(/img/bgGreenTea.jpg);
+}
+.card4 {
+    background-image: url(/img/bgTaro.jpg);
+}
+.card:hover,
+.card:focus-within {
+    transform: scale(1.05);
+}
+.card-title {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500 !important;
+}
+.card-text {
+    font-weight: 300 !important;
+    color: #000;
+}
+.card img {
+    max-width: 299px;
+    max-height: 222px;
+    object-fit: contain;
+}
+
+.card-body {
+    background-color: #fff;
+}
+
+.card .btn {
+    background-color: #000;
+    border-radius: 7px;
+}
+.card .btn:hover,
+.card .btn:focus {
+    background-color: #3d5a73;
+    transition: background-color 0.3s ease;
+}
+/* End of Product */
+
+/* Footer */
+.footer {
+    background-color: #fff;
+    max-height: 200px;
+    line-height: 1.8;
+    padding-bottom: 15rem;
+}
+.footer a {
+    font-weight: 500;
+}
+
+.footer .img,
+.footer img {
+    max-height: 200px;
+    transform: scale(0.94);
+}
+
+.footer .about h4 {
+    font-weight: bold !important;
+}
+.footer .about a {
+    text-decoration: none !important;
+    color: #000;
+    font-size: 17px;
+}
+
+.footer .kontak h4 {
+    font-weight: bold;
+}
+.footer .kontak a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+}
+.footer a:hover,
+.footer a:focus-within {
+    color: #3d5a73;
+}
+
+/* End of Footer */
+
+/* desktop */
+@media (min-width: 1200px) {
+    .jumbotron img {
+        max-width: 600px;
+    }
+    .jumbotron .desc {
+        display: flex;
+        margin-left: 80px !important;
+    }
+    .cart .nav-link {
+        position: absolute;
+        left: 68em;
+        bottom: 17px;
+    }
+    .lr {
+        position: relative;
+    }
+    .navbar-nav .about {
+        position: relative;
+        /* left: -30px; */
+        margin-left: 25px;
+    }
+    .footer .about,
+    .footer .kontak {
+        position: relative;
+        right: -600px;
+    }
+}
+@media (max-width: 1199px) {
+    .jumbotron img {
+        max-width: 100%;
+    }
+    .jumbotron .desc {
+        display: flex;
+    }
+    .cart .nav-link {
+        left: 38rem;
+    }
+}
+/* End of Desktop */
+
+/* ipad */
+@media (max-width: 992px) {
+    .cart .nav-link {
+        left: 15rem;
+        margin-right: 15px;
+    }
+    .jumbotron img {
+        max-width: 100%;
+    }
+    .jumbotron .desc {
+        display: flex;
+        padding: 0;
+        max-width: 500px;
+    }
+    .about {
+        position: relative;
+        left: -2px;
+    }
+}
+/* End of Ipad */
+
+/* mobile */
+@media (max-width: 768px) {
+    .jumbotron img {
+        width: 100%;
+    }
+    .jumbotron .desc {
+        padding-left: 1rem;
+    }
+    .card {
+        margin-bottom: 60px !important;
+    }
+
+    .footer {
+        max-height: 300px;
+    }
+    .footer .img,
+    .footer img {
+        max-height: 100px;
+        transform: scale(0.94);
+    }
+    .footer .img img {
+        position: absolute;
+        left: 33%;
+        margin-left: 15px;
+    }
+    .footer .about {
+        position: relative;
+        top: 100%;
+        left: 50%;
+        margin-top: 25px;
+        /* margin-left: 10px; */
+    }
+    .footer .kontak {
+        position: absolute !important;
+        margin-left: 30px;
+        /* left: 50%; */
+
+        /* top: -px; */
+    }
+    .footer .about a,
+    .footer .kontak a {
+        font-size: 15px;
+    }
+}
+@media (max-width: 576px) {
+    .cart .nav-link {
+        left: 5rem;
+        margin-right: 15px;
+    }
+
+    .jumbotron {
+        position: relative;
+    }
+    .jumbotron img {
+        visibility: hidden;
+        position: relative;
+    }
+    .jumbotron .desc {
+        position: absolute;
+        top: 50%;
+    }
+}
+/* End of Mobile */
+
+/* Hover */
+@media (hover) {
+    .card .card-img-top {
+        transform: scale(1.75) translateY(30%);
+        transition: transform 500ms ease;
+    }
+    .card3 .card-img-top {
+        transform: scale(1.5) translateY(32%);
+        transition: transform 500ms ease;
+    }
+    .card2 .card-img-top {
+        transform: scale(1.5) translateY(37%);
+        transition: transform 500ms ease;
+    }
+    .card4 .card-img-top {
+        transform: scale(1.5) translateY(30%);
+        transition: transform 500ms ease;
+    }
+    .card-body {
+        transform: translateY(100%);
+        transition: transform 500ms ease;
+    }
+    .card:hover .card-body,
+    .card:focus-within .card-body {
+        transform: translateY(0);
+    }
+    .card:focus-within .card-body {
+        transition-duration: 0ms;
+    }
+    .card:hover .card-img-top,
+    .card:focus-within .card-img-top {
+        transform: scale(1) translateY(0);
+    }
+    .card:focus-within .card-img-top {
+        transition-duration: 0ms;
+    }
+}
+/* End Of Hover */
