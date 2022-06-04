@@ -22,27 +22,24 @@
     <link rel="stylesheet" href="{{asset('/dist/css/bootstrap.min.css')}}" />
     <link rel="stylesheet" href="{{asset('assets/css/index/index.css')}}" />
 
-    <title>Homepage</title>
+    <title>Produk Page</title>
   </head>
   <body>
-    <section>
-        @include('layouts.navbar.navbar')
-    </section>
+ <section>
+     @include('layouts.navbar.navbar')
+ </section>
 
+  <section>
+      @yield('content')
+  </section>
 
-    {{-- Content --}}
-    <section>
-        @yield('content')
-    </section>
-    {{-- End Of Content --}}
+  {{-- Footer --}}
+  <section>
+    @include('layouts.footer.footer')
+  </section>
+  {{-- End of Footer --}}
 
-    {{-- Footer --}}
-    <section>
-        @include('layouts.footer.footer')
-    </section>
-    {{-- End Of Footer --}}
-
-    <!-- JS Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  </body>
+  <!-- JS Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
 </html>

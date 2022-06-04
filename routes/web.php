@@ -17,6 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+Route::get('/produk',function(){
+    return view('produk.produk');
+});
 
 
 Auth::routes();

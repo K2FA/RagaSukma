@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 body {
     background-color: #eeeeee;
     font-family: "Quicksand", sans-serif;
@@ -7,6 +7,7 @@ body {
 
 /* Navbar */
 .navbar {
+    /* position: relative; */
     background-color: #fff;
     box-shadow: 0 2px 0 0 #cac7c7;
     font-weight: 500 !important;
@@ -39,17 +40,24 @@ body {
 .navbar-nav li .nav-hov:hover,
 .cart .nav-link span:hover {
     color: #3d5a73 !important;
+    font-weight: 600;
+    /* padding-right: 5.5px !important; */
 }
+
 .cart .nav-link {
-    position: relative;
+    position: absolute;
     color: #000 !important;
+}
+
+.navbar-nav .about {
+    position: relative;
 }
 
 /* End Of Navbar */
 
 /* Hero Section */
 .jumbotron {
-    background-image: url(/img/jumbotronBG.jpg);
+    background-image: url(/assets/img/jumbotronBG.jpg);
     background-size: cover;
     height: 100vh;
     background-repeat: no-repeat;
@@ -58,15 +66,13 @@ body {
     height: 100vh;
 }
 .jumbotron .desc {
+    display: flex;
     color: #fff;
     align-items: center;
 }
 /* End of Hero */
 
 /* Product */
-.produk {
-    margin-bottom: 150px !important;
-}
 
 .title .fw {
     font-weight: 500 !important;
@@ -83,16 +89,16 @@ body {
     margin: 0 auto !important;
 }
 .card1 {
-    background-image: url(/img/bgKopi.jpg);
+    background-image: url(/assets/img/bgKopi.jpg);
 }
 .card2 {
-    background-image: url(/img/bgRedVelvet.jpg);
+    background-image: url(/assets/img/bgRedVelvet.jpg);
 }
 .card3 {
-    background-image: url(/img/bgGreenTea.jpg);
+    background-image: url(/assets/img/bgGreenTea.jpg);
 }
 .card4 {
-    background-image: url(/img/bgTaro.jpg);
+    background-image: url(/assets/img/bgTaro.jpg);
 }
 .card:hover,
 .card:focus-within {
@@ -105,6 +111,7 @@ body {
 .card-text {
     font-weight: 300 !important;
     color: #000;
+    text-align: justify;
 }
 .card img {
     max-width: 299px;
@@ -133,9 +140,6 @@ body {
     max-height: 200px;
     line-height: 1.8;
     padding-bottom: 15rem;
-}
-.footer a {
-    font-weight: 500;
 }
 
 .footer .img,
@@ -166,46 +170,78 @@ body {
 .footer a:focus-within {
     color: #3d5a73;
 }
+.footer .about,
+.footer .kontak {
+    position: relative;
+}
 
 /* End of Footer */
 
 /* desktop */
-@media (min-width: 1200px) {
-    .jumbotron img {
-        max-width: 600px;
-    }
-    .jumbotron .desc {
-        display: flex;
-        margin-left: 80px !important;
+@media (min-width: 1400px) {
+    .navbar-nav .about {
+        /* left: -30px; */
+        margin-left: 25px;
     }
     .cart .nav-link {
-        position: absolute;
-        left: 68em;
+        left: 75%;
         bottom: 17px;
     }
     .lr {
         position: relative;
     }
-    .navbar-nav .about {
-        position: relative;
-        /* left: -30px; */
-        margin-left: 25px;
+    .jumbotron img {
+        max-width: 600px;
+    }
+    .jumbotron .desc {
+        margin-left: 80px !important;
     }
     .footer .about,
     .footer .kontak {
+        right: -650px;
+    }
+}
+@media (max-width: 1399px) {
+    .navbar-nav .about {
+        /* left: -30px; */
+        margin-left: 25px;
+    }
+    .cart .nav-link {
+        left: 73%;
+        bottom: 17px;
+    }
+    .lr {
         position: relative;
-        right: -600px;
+    }
+    .jumbotron img {
+        max-width: 600px;
+    }
+    .jumbotron .desc {
+        margin-left: 100px !important;
+    }
+    .footer .about,
+    .footer .kontak {
+        right: -500px;
     }
 }
 @media (max-width: 1199px) {
+    .cart .nav-link {
+        left: 70%;
+    }
+    .navbar-nav .about,
+    .navbar-nav .nav-hov {
+        margin-left: 5px !important;
+        /* margin-right: 5px; */
+    }
+    .jumbotron .desc {
+        margin-left: 13px !important;
+    }
     .jumbotron img {
         max-width: 100%;
     }
-    .jumbotron .desc {
-        display: flex;
-    }
-    .cart .nav-link {
-        left: 38rem;
+    .footer .about,
+    .footer .kontak {
+        right: -270%;
     }
 }
 /* End of Desktop */
@@ -213,38 +249,51 @@ body {
 /* ipad */
 @media (max-width: 992px) {
     .cart .nav-link {
-        left: 15rem;
+        top: 15px;
+        left: 38.5rem;
         margin-right: 15px;
+    }
+    .navbar-nav .about,
+    .navbar-nav .nav-hov {
+        margin-left: 5px !important;
+        /* margin-right: 5px; */
     }
     .jumbotron img {
         max-width: 100%;
     }
     .jumbotron .desc {
-        display: flex;
         padding: 0;
-        max-width: 500px;
     }
-    .about {
+    .navbar-nav .about {
         position: relative;
         left: -2px;
+    }
+    .footer .about,
+    .footer .kontak {
+        right: -150px;
     }
 }
 /* End of Ipad */
 
 /* mobile */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+    .navbar-nav .about,
+    .navbar-nav .nav-hov {
+        margin-left: 5px !important;
+        /* margin-right: 5px; */
+    }
     .jumbotron img {
         width: 100%;
     }
     .jumbotron .desc {
         padding-left: 1rem;
+        margin-left: 0 !important;
     }
     .card {
-        margin-bottom: 60px !important;
+        margin-bottom: 40px !important;
     }
-
     .footer {
-        max-height: 300px;
+        max-height: 320px;
     }
     .footer .img,
     .footer img {
@@ -252,35 +301,37 @@ body {
         transform: scale(0.94);
     }
     .footer .img img {
-        position: absolute;
+        position: relative;
         left: 33%;
         margin-left: 15px;
     }
     .footer .about {
-        position: relative;
-        top: 100%;
+        position: absolute;
         left: 50%;
         margin-top: 25px;
-        /* margin-left: 10px; */
     }
+
     .footer .kontak {
         position: absolute !important;
-        margin-left: 30px;
-        /* left: 50%; */
-
-        /* top: -px; */
+        right: 60% !important;
+        margin-left: 30px !important;
     }
     .footer .about a,
     .footer .kontak a {
         font-size: 15px;
     }
+    .footer .about,
+    .footer .kontak {
+        right: 0;
+    }
 }
 @media (max-width: 576px) {
     .cart .nav-link {
-        left: 5rem;
+        left: 65%;
         margin-right: 15px;
+        right: 0;
+        max-width: 20px;
     }
-
     .jumbotron {
         position: relative;
     }

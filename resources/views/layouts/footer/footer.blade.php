@@ -1,13 +1,13 @@
-  <!-- Footer -->
-  <section>
+   <!-- Footer -->
+
     <footer class="footer">
       <div class="row mx-0 mt-5">
         <div class="col-lg-2 col-md-3 col-sm-2 img ms-lg-5 ms-md-3">
-          <img src="/img/Logo Raga Sukma.png" alt="Logo" />
+          <img src="{{asset('assets/img/Logo Raga Sukma.png')}}" alt="Logo" />
         </div>
         <div class="col-lg-2 col-md-3 col-sm-2 mt-4 ms-lg-5 ms-md-5">
           <div class="about">
-            <h4 class="">Raga Sukma</h4>
+            <h4>Raga Sukma</h4>
             <a href="#">Tentang Kami</a>
           </div>
         </div>
@@ -22,5 +22,5 @@
         </div>
       </div>
     </footer>
-  </section>
+
   <!-- End of Footer -->

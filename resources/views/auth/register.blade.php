@@ -6,7 +6,7 @@
           <div class="col-lg-5 col-md-8">
             <div class="card mx-auto">
                 <div class="card-body">
-                    <img src="/img/Logo Raga Sukma.png" alt="logo" class="rounded mx-auto d-block mb-2 logo" />
+                    <img src="{{asset('/assets/img/Logo Raga Sukma.png')}}" alt="logo" class="rounded mx-auto d-block mb-2 logo" />
 
                     <form class="form-login" method="POST" action="{{route('register')}}">
                     @csrf
